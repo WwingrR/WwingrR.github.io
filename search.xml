@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>HEXO学习记录</title>
+    <url>/2024/12/02/HEXO%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="这是我的-Hexo-学习记录文档"><a href="#这是我的-Hexo-学习记录文档" class="headerlink" title="这是我的 Hexo 学习记录文档"></a>这是我的 Hexo 学习记录文档</h1><p>这篇文章是关于我学习Hexo的记录，其中包含了我自己学习使用hexo的内容，当然你也可以查看<a href="https://hexo.io/zh-cn/docs/">官方Hexo使用文档</a>。</p>
+<p>以下是我插入的一张 Hexo 学习记录相关的图片：</p>
+<p><img src="/images/hexouse.png" alt="Hexo 学习记录图片"></p>
+<h2 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h2><p>Hexo 是一个基于 Node.js 的快速、简洁的静态博客框架。它允许你使用 Markdown 格式编写文章，并且支持多种主题，能够快速构建和部署博客。Hexo 在开发者社区中非常流行，尤其适合技术博客、个人博客的搭建。</p>
+<h2 id="为什么选择-Hexo？"><a href="#为什么选择-Hexo？" class="headerlink" title="为什么选择 Hexo？"></a>为什么选择 Hexo？</h2><p>选择 Hexo 的原因有很多，以下是我总结的几个主要优势：</p>
+<ul>
+<li><strong>速度快</strong>：Hexo 使用静态页面生成，速度比传统的动态网站更快。</li>
+<li><strong>支持 Markdown</strong>：Hexo 默认支持 Markdown 格式编写文章，简洁易懂，适合技术文章和博客记录。</li>
+<li><strong>主题丰富</strong>：Hexo 提供了许多主题，用户可以根据自己的需求选择不同风格的主题。</li>
+<li><strong>易于部署</strong>：Hexo 支持 Git 部署，能够方便地将博客部署到 GitHub Pages、Coding Pages 等静态托管平台。</li>
+</ul>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>安装 Hexo 的过程非常简单，只需要几个步骤：</p>
+<ol>
+<li><strong>安装 Node.js</strong>：首先需要安装 Node.js，它是 Hexo 运行所需的环境。可以从 <a href="https://nodejs.org/">Node.js 官网</a> 下载并安装最新版本。</li>
+<li><strong>全局安装 Hexo CLI</strong>：<pre><code class="bash">npm install -g hexo-cli
+</code></pre>
+</li>
+</ol>
+<p>详细内容请看官方使用文档</p>
+]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>hexo</tag>
+        <tag>HTML/CSS</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大作业记录</title>
+    <url>/2024/12/02/%E5%A4%A7%E4%BD%9C%E4%B8%9A%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>我编辑的视频</title>
+    <url>/2024/12/02/%E6%88%91%E7%BC%96%E8%BE%91%E7%9A%84%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+</search>
