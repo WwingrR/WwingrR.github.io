@@ -34,6 +34,70 @@
       </tags>
   </entry>
   <entry>
+    <title>哈夫曼编码简介</title>
+    <url>/2024/12/11/page/</url>
+    <content><![CDATA[<h2 id="哈夫曼编码简介"><a href="#哈夫曼编码简介" class="headerlink" title="哈夫曼编码简介"></a>哈夫曼编码简介</h2><p>…</p>
+<h2 id="图片压缩功能"><a href="#图片压缩功能" class="headerlink" title="图片压缩功能"></a>图片压缩功能</h2>
+<form id="upload-form">
+  <label for="file-input">选择图片上传并压缩:</label>
+  <input type="file" id="file-input" name="file" accept="image/*" required />
+  <button type="submit">上传并压缩</button>
+</form>
+
+<div id="result" style="display:none;">
+  <h2>压缩完成！</h2>
+  <a id="download-link" href="" target="_blank">点击下载压缩后的图片</a >
+</div>
+
+<script>
+  document.getElementById('upload-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    
+    const fileInput = document.getElementById('file-input');
+    const file = fileInput.files[0];
+    if (!file) {
+      alert("请先选择一个文件！");
+      return;
+    }
+
+    // 创建 FormData 对象，准备上传文件
+    const formData = new FormData();
+    formData.append("file", file);
+
+    // 调用 TinyPNG API 压缩图片
+    fetch('https://api.tinify.com/shrink', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Basic ' + btoa('api:l5Hmv0vNZF2sRrB7P8pQ9Gml44jPrhVZ')
+      },
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.error) {
+        alert('压缩失败：' + data.error);
+      } else {
+        // 获取压缩后的图片 URL
+        const compressedImageUrl = data.output.url;
+        document.getElementById('download-link').href = compressedImageUrl;
+        document.getElementById('result').style.display = 'block';
+      }
+    })
+    .catch(error => {
+      alert('发生错误：' + error.message);
+    });
+  });
+</script>
+
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>压缩编码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>大作业记录</title>
     <url>/2024/12/02/%E5%A4%A7%E4%BD%9C%E4%B8%9A%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[]]></content>
