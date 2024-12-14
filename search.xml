@@ -34,77 +34,243 @@
       </tags>
   </entry>
   <entry>
-    <title>哈夫曼编码简介</title>
-    <url>/2024/12/11/page/</url>
-    <content><![CDATA[<h2 id="哈夫曼编码简介"><a href="#哈夫曼编码简介" class="headerlink" title="哈夫曼编码简介"></a>哈夫曼编码简介</h2><p>…</p>
-<h2 id="图片压缩功能"><a href="#图片压缩功能" class="headerlink" title="图片压缩功能"></a>图片压缩功能</h2>
-<form id="upload-form">
-  <label for="file-input">选择图片上传并压缩:</label>
-  <input type="file" id="file-input" name="file" accept="image/*" required />
-  <button type="submit">上传并压缩</button>
-</form>
-
-<div id="result" style="display:none;">
-  <h2>压缩完成！</h2>
-  <a id="download-link" href="" target="_blank">点击下载压缩后的图片</a >
-</div>
-
-<script>
-  document.getElementById('upload-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    
-    const fileInput = document.getElementById('file-input');
-    const file = fileInput.files[0];
-    if (!file) {
-      alert("请先选择一个文件！");
-      return;
-    }
-
-    // 创建 FormData 对象，准备上传文件
-    const formData = new FormData();
-    formData.append("file", file);
-
-    // 调用 TinyPNG API 压缩图片
-    fetch('https://api.tinify.com/shrink', {
-      method: 'POST',
-      headers: {
-        'Authorization': 'Basic ' + btoa('api:l5Hmv0vNZF2sRrB7P8pQ9Gml44jPrhVZ')
-      },
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.error) {
-        alert('压缩失败：' + data.error);
-      } else {
-        // 获取压缩后的图片 URL
-        const compressedImageUrl = data.output.url;
-        document.getElementById('download-link').href = compressedImageUrl;
-        document.getElementById('result').style.display = 'block';
-      }
-    })
-    .catch(error => {
-      alert('发生错误：' + error.message);
-    });
-  });
-</script>
-
+    <title>个人简历</title>
+    <url>/2024/12/14/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/</url>
+    <content><![CDATA[<h1 id="关于我-👋"><a href="#关于我-👋" class="headerlink" title="关于我 👋"></a>关于我 👋</h1><p>你好！我是[你的名字]，一名充满活力和激情的大学生。我的生活是一场精彩的旅程，不仅充满了奋斗和汗水，也有温暖与回馈。我相信每个人都应该活出自己最精彩的版本，既要努力学习，又要热爱生活，挑战自我、帮助他人。</p>
+<p>在这里，你将了解我如何通过运动、学习和社会活动，不断磨砺自己，追求卓越。准备好了吗？让我们一起走进我的世界！🚀</p>
+<h2 id="我的兴趣与爱好-🎮"><a href="#我的兴趣与爱好-🎮" class="headerlink" title="我的兴趣与爱好 🎮"></a>我的兴趣与爱好 🎮</h2><h3 id="运动-—-力量与激情的释放-🏀💪"><a href="#运动-—-力量与激情的释放-🏀💪" class="headerlink" title="运动 — 力量与激情的释放 🏀💪"></a>运动 — 力量与激情的释放 🏀💪</h3><p>运动是我生活的动力源泉。无论是在篮球场上拼搏，还是在健身房挥洒汗水，运动都让我找到了释放压力、挑战极限的方式。🏆</p>
+<p>我曾在校运会中获得<strong>跳绳冠军</strong>，并在学校的<strong>篮球新生杯</strong>中带领我的队伍荣获冠军🏅。这些成绩背后，凝聚的是无数个清晨和黄昏的训练，是一次次挑战自我极限的努力。我相信，只有在最艰苦的时刻坚持下去，才能享受到最甜美的果实。💪</p>
+<p>除了团队运动，我也热衷于跑步、游泳等个人运动。这些运动不仅让我保持了良好的身体素质，更培养了我专注、毅力和自律的品质。在每一次超越自己、突破极限的瞬间，我都能感受到成就感与满足感。🏃‍♂️</p>
+<h3 id="学习-—-知识改变命运-📚🎓"><a href="#学习-—-知识改变命运-📚🎓" class="headerlink" title="学习 — 知识改变命运 📚🎓"></a>学习 — 知识改变命运 📚🎓</h3><p>在我看来，知识不仅是通向成功的钥匙，更是我们认识世界、改变世界的重要工具。📖</p>
+<p>在学术上，我从未停止过追求卓越的脚步。我的努力得到了认可，曾获得<strong>二等奖学金</strong>和<strong>三等奖学金</strong>。这些奖项不仅是对我学术能力的肯定，更让我坚信“努力的方向是最重要的”。我不满足于课本知识的积累，更希望将所学应用到实践中，推动社会的进步与发展。</p>
+<p>我对<strong>科技创新</strong>和<strong>人工智能</strong>充满兴趣，曾参与过学校的科研项目，在智能硬件领域进行过小范围的实验和研发工作。这段经历不仅提升了我的实践能力，也让我对未来的科技充满了憧憬。🚀</p>
+<h3 id="志愿者活动-—-让世界更美好-💖🌍"><a href="#志愿者活动-—-让世界更美好-💖🌍" class="headerlink" title="志愿者活动 — 让世界更美好 💖🌍"></a>志愿者活动 — 让世界更美好 💖🌍</h3><p>志愿服务一直是我生活中不可或缺的一部分。我相信，每个人都有责任为社会贡献自己的一份力量，哪怕是微小的举动，也能改变世界。🌟</p>
+<p>我曾参与<strong>锡马志愿者活动</strong>，在赛事中为选手提供引导和服务。通过这些活动，我不仅提升了自己的组织能力和沟通能力，还深刻理解到帮助他人带来的满足感。志愿者的工作让我学会了如何关心他人、如何在集体中找到自己的位置、如何在困难面前坚持不懈。每次看到自己和团队共同为社会带来的正面影响，我都感到无比自豪。</p>
+<p>除此之外，我还积极参与校园里的环保活动和社会公益项目。比如，曾组织过一次环保公益活动，号召同学们一起进行校园垃圾分类宣传，倡导低碳生活和可持续发展的理念。🌱</p>
+<h2 id="我的职业规划与未来目标-🎯"><a href="#我的职业规划与未来目标-🎯" class="headerlink" title="我的职业规划与未来目标 🎯"></a>我的职业规划与未来目标 🎯</h2><p>人生的目标就是不断挑战自我，超越自我。作为一名大学生，我不仅仅满足于当前的学业成绩和社交圈，更希望通过不断努力，成为一个全面发展、具备国际视野的复合型人才。</p>
+<h3 id="1-深化学术与实践结合-📚🔧"><a href="#1-深化学术与实践结合-📚🔧" class="headerlink" title="1. 深化学术与实践结合 📚🔧"></a>1. 深化学术与实践结合 📚🔧</h3><p>未来，我计划继续深耕自己的专业，尤其是在<strong>人工智能</strong>和<strong>大数据</strong>领域，利用新兴技术去解决现实中的难题。我也希望通过参加更多的国际会议、研讨会，拓展自己的国际视野，了解全球最前沿的科研动态。无论是攻读<strong>硕士</strong>还是<strong>博士</strong>，我都将全力以赴，为自己的梦想和目标努力奋斗。🌍</p>
+<h3 id="2-成为一名社会责任感强的领袖-👨‍💼🌟"><a href="#2-成为一名社会责任感强的领袖-👨‍💼🌟" class="headerlink" title="2. 成为一名社会责任感强的领袖 👨‍💼🌟"></a>2. 成为一名社会责任感强的领袖 👨‍💼🌟</h3><p>在未来的职业生涯中，我希望不仅是一个在技术领域有所建树的人，更是一个能够为社会带来正向改变的领导者。我希望能带领团队解决一些全球性的问题，如环境污染、资源短缺、社会不平等等，并通过技术、创新和人文关怀，推动社会变得更加美好。🌱</p>
+<h3 id="3-永远保持对生活的热爱-🔥"><a href="#3-永远保持对生活的热爱-🔥" class="headerlink" title="3. 永远保持对生活的热爱 🔥"></a>3. 永远保持对生活的热爱 🔥</h3><p>除了事业上的追求，我更希望能一直保持对生活的热爱，健康地生活，享受每一刻的美好。我计划在未来有更多时间去旅行，去感受不同的文化，去结交更多志同道合的朋友，去品味生活中的点滴乐趣。</p>
+<h2 id="我的座右铭-✨"><a href="#我的座右铭-✨" class="headerlink" title="我的座右铭 ✨"></a>我的座右铭 ✨</h2><blockquote>
+<p>“做最好的自己，做别人眼中的榜样。” </p>
+</blockquote>
+<p>这句座右铭激励着我不断超越自己，努力成为一个既能为自己争光，又能为社会贡献的好人。💡</p>
+<h2 id="结语-🎉"><a href="#结语-🎉" class="headerlink" title="结语 🎉"></a>结语 🎉</h2><p>感谢你阅读我的个人简介！在我的人生旅程中，运动、学习、志愿服务、社会责任感这些都是我不断前行的动力。未来，我希望能和你一起，去探索更多的未知，去迎接每一个挑战，去实现那些看似不可能的梦想！💫</p>
+<p>如果你也热爱运动、热爱生活，或者对未来有着远大的目标，欢迎随时联系我！一起分享成长的喜悦，一起追逐梦想的脚步！🚀</p>
 ]]></content>
       <categories>
-        <category>算法</category>
+        <category>生活杂记</category>
       </categories>
       <tags>
-        <tag>压缩编码</tag>
+        <tag>学习</tag>
+        <tag>个人简历</tag>
+        <tag>成长</tag>
+        <tag>运动</tag>
+        <tag>志愿者</tag>
       </tags>
   </entry>
   <entry>
-    <title>大作业记录</title>
-    <url>/2024/12/02/%E5%A4%A7%E4%BD%9C%E4%B8%9A%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[]]></content>
+    <title>图片压缩小程序</title>
+    <url>/2024/12/14/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/</url>
+    <content><![CDATA[<h1 id="图片压缩技术详解-📸"><a href="#图片压缩技术详解-📸" class="headerlink" title="图片压缩技术详解 📸"></a>图片压缩技术详解 📸</h1><p>在现代Web开发中，图片作为一种重要的资源，占据了大量的存储空间和带宽。尤其是高质量的图片，通常体积庞大，加载速度较慢，影响了网页的访问体验。😓 所以，图片压缩成为了提升网站性能、加速页面加载的关键技术之一！</p>
+<p>本文将深入探讨图片压缩的相关技术、常见的压缩格式、优化方法，以及如何选择最适合你需求的压缩方案。让我们一起学起来，提升网页性能吧！🚀</p>
+<h2 id="1-图片压缩的分类-📦"><a href="#1-图片压缩的分类-📦" class="headerlink" title="1. 图片压缩的分类 📦"></a>1. 图片压缩的分类 📦</h2><p>图片压缩一般可以分为两大类：<strong>有损压缩</strong>和<strong>无损压缩</strong>。</p>
+<h3 id="1-1-有损压缩-🔥"><a href="#1-1-有损压缩-🔥" class="headerlink" title="1.1 有损压缩 🔥"></a>1.1 有损压缩 🔥</h3><p>有损压缩是指在压缩过程中，丢失一些图片数据，可能会影响图片质量。虽然图像的细节会有所损失，但这类压缩方式能够大幅减小文件体积，适用于对细节要求不高的场景。</p>
+<p>常见的有损压缩格式包括：</p>
+<ul>
+<li><strong>JPEG</strong>：最常见的图片格式，广泛应用于网页和图片存储。它可以在压缩比和图像质量之间找到平衡。</li>
+<li><strong>WebP</strong>：由Google推出的图片格式，相比JPEG，WebP能提供更高的压缩比，同时保持更好的图像质量。🌟</li>
+</ul>
+<h3 id="1-2-无损压缩-🔐"><a href="#1-2-无损压缩-🔐" class="headerlink" title="1.2 无损压缩 🔐"></a>1.2 无损压缩 🔐</h3><p>无损压缩则是在压缩过程中不会丢失任何图像数据。压缩后的图像与原图完全相同，适用于对图像质量要求极高的场景，比如图标、产品图片或艺术插画等。</p>
+<p>常见的无损压缩格式包括：</p>
+<ul>
+<li><strong>PNG</strong>：广泛用于需要透明背景的图片，适合图标、界面设计等。</li>
+<li><strong>GIF</strong>：支持动画效果的图片格式，适合简单的动画图像。</li>
+<li><strong>WebP（无损模式）</strong>：WebP也可以进行无损压缩，提供比PNG更高的压缩效率，同时保持原始质量。</li>
+</ul>
+<h2 id="2-图片压缩的常见算法-🧮"><a href="#2-图片压缩的常见算法-🧮" class="headerlink" title="2. 图片压缩的常见算法 🧮"></a>2. 图片压缩的常见算法 🧮</h2><h3 id="2-1-JPEG压缩算法-🔧"><a href="#2-1-JPEG压缩算法-🔧" class="headerlink" title="2.1 JPEG压缩算法 🔧"></a>2.1 JPEG压缩算法 🔧</h3><p>JPEG压缩算法基于离散余弦变换（DCT），将图像分解为频域表示，然后去除其中的冗余信息。这使得JPEG能够在较小的文件大小下保持较好的图像质量。不过，压缩比越大，图像质量损失越明显，因此需要平衡压缩率和视觉效果。</p>
+<h3 id="2-2-PNG压缩算法-📉"><a href="#2-2-PNG压缩算法-📉" class="headerlink" title="2.2 PNG压缩算法 📉"></a>2.2 PNG压缩算法 📉</h3><p>PNG采用的是无损压缩算法，主要通过<code>zlib</code>（压缩工具库）和<code>deflate</code>算法来优化图像数据。虽然PNG的压缩效果通常不如JPEG，但它能够保持图像的完整性，适用于对质量要求较高的图形。</p>
+<h3 id="2-3-WebP压缩算法-⚙️"><a href="#2-3-WebP压缩算法-⚙️" class="headerlink" title="2.3 WebP压缩算法 ⚙️"></a>2.3 WebP压缩算法 ⚙️</h3><p>WebP是一个现代的图像格式，支持有损和无损压缩，能够提供比JPEG和PNG更高的压缩效果。它采用了VP8视频编码和自有的图像压缩技术，使得图片在相同质量下文件体积更小。🎉</p>
+<h2 id="3-图片压缩工具-🛠️"><a href="#3-图片压缩工具-🛠️" class="headerlink" title="3. 图片压缩工具 🛠️"></a>3. 图片压缩工具 🛠️</h2><p>为了更高效地进行图片压缩，市面上有很多工具和服务可以帮助我们实现自动化处理。</p>
+<h3 id="3-1-在线工具-🌐"><a href="#3-1-在线工具-🌐" class="headerlink" title="3.1 在线工具 🌐"></a>3.1 在线工具 🌐</h3><ul>
+<li><strong>TinyPNG</strong>：适用于PNG和JPEG格式的压缩，压缩效果非常好。你只需上传图片，工具会自动帮你压缩并下载。</li>
+<li><strong>ImageOptim</strong>：一款强大的Mac工具，支持多种格式的无损压缩，尤其适合开发者批量处理图片。</li>
+<li><strong>Squoosh</strong>：Google推出的在线图片压缩工具，支持多种格式，如WebP、JPEG、PNG等，且具有实时预览功能。</li>
+</ul>
+<h3 id="3-2-离线工具-💻"><a href="#3-2-离线工具-💻" class="headerlink" title="3.2 离线工具 💻"></a>3.2 离线工具 💻</h3><ul>
+<li><strong>ImageMagick</strong>：一款功能强大的图片处理工具，支持批量压缩、格式转换等操作，非常适合开发者。</li>
+<li><strong>OptiPNG</strong>：专门针对PNG格式的优化工具，能够进行无损压缩。</li>
+<li><strong>jpegoptim</strong>：一个轻量级的JPEG优化工具，支持无损压缩，非常适合大规模的JPEG图片压缩。</li>
+</ul>
+<h2 id="4-图片压缩的最佳实践-🚀"><a href="#4-图片压缩的最佳实践-🚀" class="headerlink" title="4. 图片压缩的最佳实践 🚀"></a>4. 图片压缩的最佳实践 🚀</h2><h3 id="4-1-根据用途选择压缩方式-🎯"><a href="#4-1-根据用途选择压缩方式-🎯" class="headerlink" title="4.1 根据用途选择压缩方式 🎯"></a>4.1 根据用途选择压缩方式 🎯</h3><ul>
+<li><strong>静态图片</strong>：对于大多数静态图片（如博客插图、产品图等），推荐使用JPEG或WebP格式，能够在较小的文件体积和较好的视觉效果之间找到平衡。</li>
+<li><strong>透明背景图</strong>：如果需要透明背景，建议使用PNG格式或WebP无损压缩。</li>
+</ul>
+<h3 id="4-2-调整图片质量-⚖️"><a href="#4-2-调整图片质量-⚖️" class="headerlink" title="4.2 调整图片质量 ⚖️"></a>4.2 调整图片质量 ⚖️</h3><p>压缩时，质量因子（Quality Factor）非常重要。对于有损压缩格式如JPEG，建议设置在**60%到80%**之间。这个质量因子通常可以保证图片视觉效果的同时，实现较好的压缩比。</p>
+<h3 id="4-3-批量处理图片-📚"><a href="#4-3-批量处理图片-📚" class="headerlink" title="4.3 批量处理图片 📚"></a>4.3 批量处理图片 📚</h3><p>对于有大量图片的项目，批量处理是必不可少的。可以使用脚本或工具（如ImageMagick、jpegoptim）自动化处理，节省大量时间。</p>
+<h3 id="4-4-使用WebP格式-🌍"><a href="#4-4-使用WebP格式-🌍" class="headerlink" title="4.4 使用WebP格式 🌍"></a>4.4 使用WebP格式 🌍</h3><p>WebP格式相较于JPEG和PNG，能够提供更高的压缩率和图像质量，因此在支持WebP的浏览器中，推荐优先使用此格式。🚀</p>
+<h3 id="4-5-延迟加载（Lazy-Loading）-⏳"><a href="#4-5-延迟加载（Lazy-Loading）-⏳" class="headerlink" title="4.5 延迟加载（Lazy Loading） ⏳"></a>4.5 延迟加载（Lazy Loading） ⏳</h3><p>延迟加载可以显著提高页面加载速度，尤其是当页面图片较多时。通过设置图片延迟加载，只有当用户滚动到图片所在区域时，图片才会加载，减少了首屏加载的资源消耗。</p>
+<h2 id="5-总结-📝"><a href="#5-总结-📝" class="headerlink" title="5. 总结 📝"></a>5. 总结 📝</h2><p>图片压缩不仅能够减少网站的带宽占用，还能提升用户体验，缩短页面加载时间。💨 不论是有损压缩还是无损压缩，选择合适的压缩工具和算法，能够帮助你在保证质量的同时，减少图片的存储和传输成本。</p>
+<p>通过合理使用图片压缩技术，我们可以为用户提供更流畅、更高效的Web体验，提升网站的整体性能。👏</p>
+<hr>
+<p>希望这篇文章能帮助你更好地理解和应用图片压缩技术，如果有任何问题或建议，欢迎在评论区留言，与我一起讨论！😊</p>
+<div class="container">
+    <h2>上传并压缩图片</h2>
+    <!-- 上传文件 -->
+    <input type="file" id="fileInput" accept="image/*" />
+    <button id="compressBtn" class="compress-btn">压缩</button>
+    <!-- 显示消息 -->
+    <div class="message" id="message"></div>
+    <!-- 显示上传的图片 -->
+    <div id="uploadedImageContainer" style="display:none;">
+    <h3>上传的图片:</h3>
+    <img id="uploadedImage" src="" alt="Uploaded Image" style="max-width: 80%; margin-top: 15px;" />
+    </div>
+
+</div>
+
+<style>
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .message {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 16px;
+        display: none;
+    }
+
+    .success {
+        color: green;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .compress-btn {
+        margin-top: 10px;
+        padding: 12px 30px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #6c757d;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .compress-btn:hover {
+        background-color: #5a6268;
+        transform: translateY(-2px);
+    }
+
+    #fileInput {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    #uploadedImageContainer {
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+    document.getElementById('compressBtn').addEventListener('click', function() {
+        const fileInput = document.getElementById('fileInput');
+        const messageDiv = document.getElementById('message');
+        const file = fileInput.files[0];
+
+        // 隐藏任何先前的消息
+        messageDiv.style.display = 'none';
+
+        // 检查文件是否存在
+        if (file) {
+            // 检查文件类型
+            if (!file.type.startsWith('image/')) {
+                alert('请上传有效的图片文件');
+                return;
+            }
+
+            // 检查文件大小限制：例如，最大 5MB
+            const maxSize = 5 * 1024 * 1024; // 5MB
+            if (file.size > maxSize) {
+                alert('文件过大，请上传小于 5MB 的图片');
+                return;
+            }
+
+            // 准备表单数据
+            const formData = new FormData();
+            formData.append('file', file);
+
+            // 发送表单数据到后端
+            fetch('http://localhost:3000/api/upload-compress', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // 显示成功消息
+                    messageDiv.textContent = `压缩成功，压缩率为: ${data.compressionRate}%`;
+                    messageDiv.className = 'message success';
+                    messageDiv.style.display = 'block'; // 显示消息
+
+                    // 显示上传并压缩后的图片
+                    const uploadedImage = document.getElementById('uploadedImage');
+                    uploadedImage.src = `http://localhost:3000${data.filePath}`; // 设置图片路径
+                    document.getElementById('uploadedImageContainer').style.display = 'block'; // 显示图片容器
+                } else {
+                    // 显示失败消息
+                    messageDiv.textContent = `压缩失败: ${data.error}`;
+                    messageDiv.className = 'message error';
+                    messageDiv.style.display = 'block'; // 显示消息
+                }
+            })
+            .catch(error => {
+                console.error('上传失败:', error);
+                messageDiv.textContent = '上传失败，请稍后重试。';
+                messageDiv.className = 'message error';
+                messageDiv.style.display = 'block'; // 显示消息
+            });
+        } else {
+            alert('请先选择一个文件');
+        }
+    });
+</script>
+
+
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>图片压缩</tag>
+        <tag>技术</tag>
+        <tag>Web优化</tag>
+        <tag>性能提升</tag>
+      </tags>
   </entry>
   <entry>
-    <title>我编辑的视频</title>
+    <title>编辑的视频</title>
     <url>/2024/12/02/%E6%88%91%E7%BC%96%E8%BE%91%E7%9A%84%E8%A7%86%E9%A2%91/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113650840964884&bvid=BV1hdBLYNEvt&cid=27338933625&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=500 width=100%></iframe>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113650857740972&bvid=BV1a9BLYiE8D&cid=27338999546&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=500 width=100%></iframe>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>视频剪辑</tag>
+      </tags>
   </entry>
 </search>
